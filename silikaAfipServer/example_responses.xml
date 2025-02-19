@@ -1,0 +1,1952 @@
+Error response from WSAA (already authenticated)
+================================================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<soapenv:Fault>
+			<faultcode xmlns:ns1="http://xml.apache.org/axis/">ns1:coe.alreadyAuthenticated</faultcode>
+			<faultstring>El CEE ya posee un TA valido para el acceso al WSN solicitado</faultstring>
+			<detail>
+				<ns2:exceptionName xmlns:ns2="http://xml.apache.org/axis/">gov.afip.desein.dvadac.sua.view.wsaa.LoginFault</ns2:exceptionName>
+				<ns3:hostname xmlns:ns3="http://xml.apache.org/axis/">wsaaext0.homo.afip.gov.ar</ns3:hostname>
+			</detail>
+		</soapenv:Fault>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+Error response from WSAA (invalid CMS)
+======================================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<soapenv:Fault>
+			<faultcode xmlns:ns1="http://xml.apache.org/axis/">ns1:cms.bad</faultcode>
+			<faultstring>El CMS no es valido</faultstring>
+			<detail>
+				<ns2:exceptionName xmlns:ns2="http://xml.apache.org/axis/">gov.afip.desein.dvadac.sua.view.wsaa.LoginFault</ns2:exceptionName>
+				<ns3:hostname xmlns:ns3="http://xml.apache.org/axis/">wsaaext0.homo.afip.gov.ar</ns3:hostname>
+			</detail>
+		</soapenv:Fault>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+Error response from WSAA (invalid datetime)
+===========================================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<soapenv:Fault>
+			<faultcode xmlns:ns1="http://xml.apache.org/axis/">ns1:xml.generationTime.invalid</faultcode>
+			<faultstring>generationTime posee formato o dato inv&#xE1;lido (ej: en el futuro o m&#xE1;s de 24 horas de antig&#xFC;edad)</faultstring>
+			<detail>
+				<ns2:exceptionName xmlns:ns2="http://xml.apache.org/axis/">gov.afip.desein.dvadac.sua.view.wsaa.LoginFault</ns2:exceptionName>
+				<ns3:hostname xmlns:ns3="http://xml.apache.org/axis/">wsaaext0.homo.afip.gov.ar</ns3:hostname>
+			</detail>
+		</soapenv:Fault>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+Error response from WSAA (request with non XML format)
+======================================================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<soapenv:Fault>
+			<faultcode>soapenv:Server.userException</faultcode>
+			<faultstring>org.xml.sax.SAXParseException; Premature end of file.</faultstring>
+			<detail>
+				<ns1:hostname xmlns:ns1="http://xml.apache.org/axis/">wsaaext0.homo.afip.gov.ar</ns1:hostname>
+			</detail>
+		</soapenv:Fault>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+Success response from WSAA
+==========================
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soapenv:Body>
+		<loginCmsResponse xmlns="http://wsaa.view.sua.dvadac.desein.afip.gov">
+			<loginCmsReturn>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;loginTicketResponse version=&quot;1.0&quot;&gt;
+    &lt;header&gt;
+        &lt;source&gt;CN=wsaahomo, O=AFIP, C=AR, SERIALNUMBER=CUIT 33693450239&lt;/source&gt;
+        &lt;destination&gt;SERIALNUMBER=CUIT 20353172795, CN=rodri&lt;/destination&gt;
+        &lt;uniqueId&gt;483298780&lt;/uniqueId&gt;
+        &lt;generationTime&gt;2020-11-12T15:44:57.156-03:00&lt;/generationTime&gt;
+        &lt;expirationTime&gt;2020-11-13T03:44:57.156-03:00&lt;/expirationTime&gt;
+    &lt;/header&gt;
+    &lt;credentials&gt;
+        &lt;token&gt;PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgc3JjPSJDTj13c2FhaG9tbywgTz1BRklQLCBDPUFSLCBTRVJJQUxOVU1CRVI9Q1VJVCAzMzY5MzQ1MDIzOSIgZHN0PSJDTj13c2ZlLCBPPUFGSVAsIEM9QVIiIHVuaXF1ZV9pZD0iMTI4NjU2Mzg0MCIgZ2VuX3RpbWU9IjE2MDUyMDY2MzciIGV4cF90aW1lPSIxNjA1MjQ5ODk3Ii8+CiAgICA8b3BlcmF0aW9uIHR5cGU9ImxvZ2luIiB2YWx1ZT0iZ3JhbnRlZCI+CiAgICAgICAgPGxvZ2luIGVudGl0eT0iMzM2OTM0NTAyMzkiIHNlcnZpY2U9IndzZmUiIHVpZD0iU0VSSUFMTlVNQkVSPUNVSVQgMjAzNTMxNzI3OTUsIENOPXJvZHJpIiBhdXRobWV0aG9kPSJjbXMiIHJlZ21ldGhvZD0iMjIiPgogICAgICAgICAgICA8cmVsYXRpb25zPgogICAgICAgICAgICAgICAgPHJlbGF0aW9uIGtleT0iMjAzNTMxNzI3OTUiIHJlbHR5cGU9IjQiLz4KICAgICAgICAgICAgPC9yZWxhdGlvbnM+CiAgICAgICAgPC9sb2dpbj4KICAgIDwvb3BlcmF0aW9uPgo8L3Nzbz4K&lt;/token&gt;
+        &lt;sign&gt;j2P/2xZsM/eL2S93Cnw4XGtxdTy8jdYsd00yih+UY2bmEWoz5UaDisGOdtRKSIouXwqEUv1qrU3SP1rE4SH7AN1qwc2XdYoNcdrFVBfOlk37jQGx9KgDA5kgiXyopnSFEPbqmduaknL50xbAjFFHNKIj2HLCYzaDvFCNxA4/oYE=&lt;/sign&gt;
+    &lt;/credentials&gt;
+&lt;/loginTicketResponse&gt;
+			</loginCmsReturn>
+		</loginCmsResponse>
+	</soapenv:Body>
+</soapenv:Envelope>
+
+
+Error FECAESolicitar (invalid CUIT)
+===================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-13T11:21:01.7801797-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <Errors>
+                    <Err>
+                        <Code>600</Code>
+                        <Msg>ValidacionDeToken: No aparecio CUIT en lista de relaciones: 20353172796</Msg>
+                    </Err>
+                </Errors>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (invalid PtoVta)
+=====================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-13T11:32:51.1262337-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>0</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20201113113251</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>96</DocTipo>
+                        <DocNro>35317279</DocNro>
+                        <CbteDesde>3</CbteDesde>
+                        <CbteHasta>3</CbteHasta>
+                        <CbteFch>20201113</CbteFch>
+                        <Resultado>R</Resultado>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+                <Errors>
+                    <Err>
+                        <Code>10004</Code>
+                        <Msg>Campo PtoVta debe estar comprendido entre 1 y 99998</Msg>
+                    </Err>
+                </Errors>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (invalid document number or datetime, i.e. not increasing monotone)
+========================================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Header>
+		<FEHeaderInfo xmlns="http://ar.gov.afip.dif.FEV1/">
+			<ambiente>HomologacionExterno - efa</ambiente>
+			<fecha>2020-11-13T09:27:21.8508897-03:00</fecha>
+			<id>4.0.0.0</id>
+		</FEHeaderInfo>
+	</soap:Header>
+	<soap:Body>
+		<FECAESolicitarResponse xmlns="http://ar.gov.afip.dif.FEV1/">
+			<FECAESolicitarResult>
+				<FeCabResp>
+					<Cuit>20353172795</Cuit>
+					<PtoVta>1</PtoVta>
+					<CbteTipo>6</CbteTipo>
+					<FchProceso>20201113092721</FchProceso>
+					<CantReg>1</CantReg>
+					<Resultado>R</Resultado>
+					<Reproceso>N</Reproceso>
+				</FeCabResp>
+				<FeDetResp>
+					<FECAEDetResponse>
+						<Concepto>1</Concepto>
+						<DocTipo>96</DocTipo>
+						<DocNro>35317279</DocNro>
+						<CbteDesde>2</CbteDesde>
+						<CbteHasta>2</CbteHasta>
+						<CbteFch>20201113</CbteFch>
+						<Resultado>R</Resultado>
+						<CAE />
+						<CAEFchVto />
+					</FECAEDetResponse>
+				</FeDetResp>
+				<Errors>
+					<Err>
+						<Code>10016</Code>
+						<Msg>El numero o fecha del comprobante no se corresponde con el proximo a autorizar. Consultar metodo FECompUltimoAutorizado.</Msg>
+					</Err>
+				</Errors>
+			</FECAESolicitarResult>
+		</FECAESolicitarResponse>
+	</soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (invalid document date format)
+===================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-13T09:48:32.8090067-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20201113094832</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>96</DocTipo>
+                        <DocNro>35317279</DocNro>
+                        <CbteDesde>2</CbteDesde>
+                        <CbteHasta>2</CbteHasta>
+                        <CbteFch>2020-1113</CbteFch>
+                        <Resultado>R</Resultado>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+                <Errors>
+                    <Err>
+                        <Code>10016</Code>
+                        <Msg>Campo CbteFch No corresponde a una fecha valida con formato YYYYMMDD</Msg>
+                    </Err>
+                </Errors>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (invalid user ID for receipts type A and M)
+================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-17T13:05:28.2667583-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>1</CbteTipo>
+                    <FchProceso>20210217130528</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>99</DocTipo>
+                        <DocNro>0</DocNro>
+                        <CbteDesde>3</CbteDesde>
+                        <CbteHasta>3</CbteHasta>
+                        <CbteFch>20210217</CbteFch>
+                        <Resultado>R</Resultado>
+                        <Observaciones>
+                            <Obs>
+                                <Code>10013</Code>
+                                <Msg>Campo  DocTipo  Para comprobantes clase A y M el campo  DocTipo debe ser igual a 80 (CUIT)</Msg>
+                            </Obs>
+                            <Obs>
+                                <Code>10015</Code>
+                                <Msg>El campo  DocNro es invalido.</Msg>
+                            </Obs>
+                        </Observaciones>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (miscalculated IVA)
+========================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-13T10:13:34.6582925-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20201113101334</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>96</DocTipo>
+                        <DocNro>35317279</DocNro>
+                        <CbteDesde>3</CbteDesde>
+                        <CbteHasta>3</CbteHasta>
+                        <CbteFch>20201113</CbteFch>
+                        <Resultado>R</Resultado>
+                        <Observaciones>
+                            <Obs>
+                                <Code>10048</Code>
+                                <Msg>El campo  'Importe Total' ImpTotal, debe ser igual  a la  suma de ImpTotConc + ImpNeto + ImpOpEx + ImpTrib + ImpIVA.</Msg>
+                            </Obs>
+                            <Obs>
+                                <Code>10018</Code>
+                                <Msg>Si ImpIva es igual a 0 el objeto Iva y AlicIva son obligatorios. Id iva = 3 (iva 0)</Msg>
+                            </Obs>
+                        </Observaciones>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (invalid null tax base for non-null IVA aliquot)
+=====================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-10T11:23:10.7333241-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20210210112310</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>99</DocTipo>
+                        <DocNro>0</DocNro>
+                        <CbteDesde>48</CbteDesde>
+                        <CbteHasta>48</CbteHasta>
+                        <CbteFch>20210210</CbteFch>
+                        <Resultado>R</Resultado>
+                        <Observaciones>
+                            <Obs>
+                                <Code>10020</Code>
+                                <Msg>El  campo  BaseImp  en AlicIVA es obligatorio  y debe ser mayor a 0 cero.</Msg>
+                            </Obs>
+                        </Observaciones>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (invalid IVA aliquot and "Impuesto tributo" field present)
+===============================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-13T10:19:54.8154395-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20201113101954</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>96</DocTipo>
+                        <DocNro>35317279</DocNro>
+                        <CbteDesde>3</CbteDesde>
+                        <CbteHasta>3</CbteHasta>
+                        <CbteFch>20201113</CbteFch>
+                        <Resultado>R</Resultado>
+                        <Observaciones>
+                            <Obs>
+                                <Code>10018</Code>
+                                <Msg>Si ImpIva es igual a 0 el objeto Iva y AlicIva son obligatorios. Id iva = 3 (iva 0)</Msg>
+                            </Obs>
+                            <Obs>
+                                <Code>10024</Code>
+                                <Msg>Si ImpTrib es mayor a 0 el objeto Tributos y Tributo son obligatorios.</Msg>
+                            </Obs>
+                        </Observaciones>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (error has precedence over observations, invalid date with invalid IVA aliquot
+and "Impuesto tributo" field present yields only the date error)
+===================================================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-13T10:37:13.4600238-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20201113103644</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>96</DocTipo>
+                        <DocNro>35317279</DocNro>
+                        <CbteDesde>3</CbteDesde>
+                        <CbteHasta>3</CbteHasta>
+                        <CbteFch>2020-1113</CbteFch>
+                        <Resultado>R</Resultado>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+                <Errors>
+                    <Err>
+                        <Code>10016</Code>
+                        <Msg>Campo CbteFch No corresponde a una fecha valida con formato YYYYMMDD</Msg>
+                    </Err>
+                </Errors>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (miscalculated IVA related totals)
+=======================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-01-07T11:02:15.921466-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20210107110215</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>99</DocTipo>
+                        <DocNro>0</DocNro>
+                        <CbteDesde>46</CbteDesde>
+                        <CbteHasta>46</CbteHasta>
+                        <CbteFch>20210107</CbteFch>
+                        <Resultado>R</Resultado>
+                        <Observaciones>
+                            <Obs>
+                                <Code>10023</Code>
+                                <Msg>La suma de los campos Importe en IVA debe ser igual al valor ingresado en ImpIVA.</Msg>
+                            </Obs>
+                            <Obs>
+                                <Code>10061</Code>
+                                <Msg>La suma de los campos BaseImp en AlicIva debe ser igual al valor ingresado en ImpNeto.</Msg>
+                            </Obs>
+                        </Observaciones>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (date outside the allowed range)
+=====================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-03-19T17:09:28.7055768-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20381510116</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>11</CbteTipo>
+                    <FchProceso>20210319170928</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>99</DocTipo>
+                        <DocNro>0</DocNro>
+                        <CbteDesde>2</CbteDesde>
+                        <CbteHasta>2</CbteHasta>
+                        <CbteFch>20210325</CbteFch>
+                        <Resultado>R</Resultado>
+                        <Observaciones>
+                            <Obs>
+                                <Code>10016</Code>
+                                <Msg>Campo CbteFch Debe estar comprendido  en el  rango  N-5 y N+5 siendo N la fecha de envio del pedido  de autorizacion para 1 - Productos</Msg>
+                            </Obs>
+                        </Observaciones>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (internal server error)
+============================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-13T10:32:18.3650977-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20201113103148</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>96</DocTipo>
+                        <DocNro>35317279</DocNro>
+                        <CbteDesde>3</CbteDesde>
+                        <CbteHasta>3</CbteHasta>
+                        <CbteFch>2020-1113</CbteFch>
+                        <Resultado>R</Resultado>
+                        <CAE />
+                        <CAEFchVto />
+                    </FECAEDetResponse>
+                </FeDetResp>
+                <Errors>
+                    <Err>
+                        <Code>500</Code>
+                        <Msg>Error interno de aplicacón: - Metodo FECAESolicitar</Msg>
+                    </Err>
+                </Errors>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAESolicitar (expired token)
+============================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-16T17:26:26.4984463-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <Errors>
+                    <Err>
+                        <Code>600</Code>
+                        <Msg>ValidacionDeToken: No validaron las fechas del token GenTime, ExpTime, NowUTC: 1605277196 (11/13/2020 2:19:26 PM), 1605320456 (11/14/2020 2:20:56 AM), 11/16/2020 8:26:26 PM</Msg>
+                    </Err>
+                </Errors>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FECAESolicitar
+======================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-13T11:09:44.1063847-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAESolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAESolicitarResult>
+                <FeCabResp>
+                    <Cuit>20353172795</Cuit>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                    <FchProceso>20201113110944</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>A</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEDetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>96</DocTipo>
+                        <DocNro>35317279</DocNro>
+                        <CbteDesde>3</CbteDesde>
+                        <CbteHasta>3</CbteHasta>
+                        <CbteFch>20201113</CbteFch>
+                        <Resultado>A</Resultado>
+                        <CAE>70465899261513</CAE>
+                        <CAEFchVto>20201123</CAEFchVto>
+                    </FECAEDetResponse>
+                </FeDetResp>
+            </FECAESolicitarResult>
+        </FECAESolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FECompUltimoAutorizado
+==============================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-19T17:07:03.7352408-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECompUltimoAutorizadoResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECompUltimoAutorizadoResult>
+                <PtoVta>1</PtoVta>
+                <CbteTipo>6</CbteTipo>
+                <CbteNro>44</CbteNro>
+            </FECompUltimoAutorizadoResult>
+        </FECompUltimoAutorizadoResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECompConsultar (non existent document)
+=============================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-20T10:04:35.1502401-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECompConsultarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECompConsultarResult>
+                <Errors>
+                    <Err>
+                        <Code>602</Code>
+                        <Msg>No existen datos en nuestros registros para los parametros ingresados.</Msg>
+                    </Err>
+                </Errors>
+            </FECompConsultarResult>
+        </FECompConsultarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FECompConsultar for CAE document
+========================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-19T17:07:03.9696158-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECompConsultarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECompConsultarResult>
+                <ResultGet>
+                    <Concepto>1</Concepto>
+                    <DocTipo>96</DocTipo>
+                    <DocNro>35317279</DocNro>
+                    <CbteDesde>42</CbteDesde>
+                    <CbteHasta>42</CbteHasta>
+                    <CbteFch>20201119</CbteFch>
+                    <ImpTotal>1.21</ImpTotal>
+                    <ImpTotConc>0</ImpTotConc>
+                    <ImpNeto>1</ImpNeto>
+                    <ImpOpEx>0</ImpOpEx>
+                    <ImpTrib>0</ImpTrib>
+                    <ImpIVA>0.21</ImpIVA>
+                    <FchServDesde />
+                    <FchServHasta />
+                    <FchVtoPago />
+                    <MonId>PES</MonId>
+                    <MonCotiz>1</MonCotiz>
+                    <Iva>
+                        <AlicIva>
+                            <Id>5</Id>
+                            <BaseImp>1</BaseImp>
+                            <Importe>0.21</Importe>
+                        </AlicIva>
+                    </Iva>
+                    <Resultado>A</Resultado>
+                    <CodAutorizacion>70475899866178</CodAutorizacion>
+                    <EmisionTipo>CAE</EmisionTipo>
+                    <FchVto>20201129</FchVto>
+                    <FchProceso>20201119092420</FchProceso>
+                    <PtoVta>1</PtoVta>
+                    <CbteTipo>6</CbteTipo>
+                </ResultGet>
+            </FECompConsultarResult>
+        </FECompConsultarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FECompConsultar for CAEA document
+=========================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-03-15T17:32:03.7022566-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECompConsultarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECompConsultarResult>
+                <ResultGet>
+                    <Concepto>1</Concepto>
+                    <DocTipo>80</DocTipo>
+                    <DocNro>30584620389</DocNro>
+                    <CbteDesde>1</CbteDesde>
+                    <CbteHasta>1</CbteHasta>
+                    <CbteFch>20210223</CbteFch>
+                    <ImpTotal>104</ImpTotal>
+                    <ImpTotConc>1</ImpTotConc>
+                    <ImpNeto>90.5</ImpNeto>
+                    <ImpOpEx>3</ImpOpEx>
+                    <ImpTrib>0</ImpTrib>
+                    <ImpIVA>9.51</ImpIVA>
+                    <FchServDesde />
+                    <FchServHasta />
+                    <FchVtoPago />
+                    <MonId>PES</MonId>
+                    <MonCotiz>1</MonCotiz>
+                    <Iva>
+                        <AlicIva>
+                            <Id>4</Id>
+                            <BaseImp>90.5</BaseImp>
+                            <Importe>9.51</Importe>
+                        </AlicIva>
+                    </Iva>
+                    <Resultado>A</Resultado>
+                    <CodAutorizacion>31086749381881</CodAutorizacion>
+                    <EmisionTipo>CAEA</EmisionTipo>
+                    <FchVto>20210228</FchVto>
+                    <FchProceso>20210223160444</FchProceso>
+                    <Observaciones>
+                        <Obs>
+                            <Code>1431</Code>
+                            <Msg>Debe estar dado de alta en el Impuesto al Valor Agregado al momento de la fecha de emisión del comprobante.</Msg>
+                        </Obs>
+                    </Observaciones>
+                    <PtoVta>9902</PtoVta>
+                    <CbteTipo>1</CbteTipo>
+                </ResultGet>
+            </FECompConsultarResult>
+        </FECompConsultarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAEASolicitar (invalid date)
+====================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-19T14:38:02.7687137-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAEASolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEASolicitarResult>
+                <Errors>
+                    <Err>
+                        <Code>15006</Code>
+                        <Msg>Fecha de envío podrá ser desde 5 días corridos anteriores al inicio hasta el último dia de cada quincena. Del 2/24/2021 hasta 3/15/2021</Msg>
+                    </Err>
+                </Errors>
+            </FECAEASolicitarResult>
+        </FECAEASolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAEASolicitar (CAEA already granted for the given CUIT, period and fortnight).
+======================================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-19T14:45:14.0671811-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAEASolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEASolicitarResult>
+                <ResultGet>
+                    <Periodo>0</Periodo>
+                    <Orden>0</Orden>
+                </ResultGet>
+                <Errors>
+                    <Err>
+                        <Code>15008</Code>
+                        <Msg>Existe un CAEA otorgado para la CUIT solicitante con el periodo y orden informado. Consultar el metodo FECAEAConsultar.</Msg>
+                    </Err>
+                </Errors>
+            </FECAEASolicitarResult>
+        </FECAEASolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FECAEASolicitar
+=======================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-19T14:41:32.019653-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAEASolicitarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEASolicitarResult>
+                <ResultGet>
+                    <CAEA>31085259398642</CAEA>
+                    <Periodo>202102</Periodo>
+                    <Orden>2</Orden>
+                    <FchVigDesde>20210216</FchVigDesde>
+                    <FchVigHasta>20210228</FchVigHasta>
+                    <FchTopeInf>20210305</FchTopeInf>
+                    <FchProceso>20210219144132</FchProceso>
+                </ResultGet>
+            </FECAEASolicitarResult>
+        </FECAEASolicitarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FECAEAConsultar
+=======================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-19T14:57:02.0385627-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAEAConsultarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEAConsultarResult>
+                <ResultGet>
+                    <CAEA>31085259398642</CAEA>
+                    <Periodo>202102</Periodo>
+                    <Orden>2</Orden>
+                    <FchVigDesde>20210216</FchVigDesde>
+                    <FchVigHasta>20210228</FchVigHasta>
+                    <FchTopeInf>20210305</FchTopeInf>
+                    <FchProceso>20210219144131</FchProceso>
+                </ResultGet>
+            </FECAEAConsultarResult>
+        </FECAEAConsultarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAEARegInformativo (missing process date field for document authorized with contingency CAEA)
+=====================================================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-23T14:36:03.2127588-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAEARegInformativoResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEARegInformativoResult>
+                <FeCabResp>
+                    <Cuit>20381510116</Cuit>
+                    <PtoVta>9901</PtoVta>
+                    <CbteTipo>1</CbteTipo>
+                    <FchProceso>20210223143601</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEADetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>80</DocTipo>
+                        <DocNro>30584620389</DocNro>
+                        <CbteDesde>1</CbteDesde>
+                        <CbteHasta>1</CbteHasta>
+                        <CbteFch>20210223</CbteFch>
+                        <Resultado>R</Resultado>
+                        <Observaciones>
+                            <Obs>
+                                <Code>1440</Code>
+                                <Msg>El campo CbteFchHsGen es obligatorio informarlo cuando el punto de venta es del tipo CONTINGENCIA CAEA</Msg>
+                            </Obs>
+                        </Observaciones>
+                        <CAEA>31086749381881</CAEA>
+                    </FECAEADetResponse>
+                </FeDetResp>
+            </FECAEARegInformativoResult>
+        </FECAEARegInformativoResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Error FECAEARegInformativo (invalid document number)
+====================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-23T15:34:52.5387207-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAEARegInformativoResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEARegInformativoResult>
+                <FeCabResp>
+                    <Cuit>20381510116</Cuit>
+                    <PtoVta>9901</PtoVta>
+                    <CbteTipo>1</CbteTipo>
+                    <FchProceso>20210223153452</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>R</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEADetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>80</DocTipo>
+                        <DocNro>30584620389</DocNro>
+                        <CbteDesde>1</CbteDesde>
+                        <CbteHasta>1</CbteHasta>
+                        <CbteFch>20210223</CbteFch>
+                        <Resultado>R</Resultado>
+                        <CAEA>31086749381881</CAEA>
+                    </FECAEADetResponse>
+                </FeDetResp>
+                <Errors>
+                    <Err>
+                        <Code>703</Code>
+                        <Msg>El numero de comprobante informado debe ser mayor en 1 al ultimo informado para igual punto de venta y tipo de comprobante. Consultar metodo FECompUltimoAutorizado.</Msg>
+                    </Err>
+                </Errors>
+            </FECAEARegInformativoResult>
+        </FECAEARegInformativoResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FECAEARegInformativo (despite being observed for a generation date outside the allowed range)
+=====================================================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-03-16T11:33:41.4322726-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAEARegInformativoResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEARegInformativoResult>
+                <FeCabResp>
+                    <Cuit>20381510116</Cuit>
+                    <PtoVta>9902</PtoVta>
+                    <CbteTipo>1</CbteTipo>
+                    <FchProceso>20210316113341</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>A</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEADetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>80</DocTipo>
+                        <DocNro>30584620389</DocNro>
+                        <CbteDesde>10</CbteDesde>
+                        <CbteHasta>10</CbteHasta>
+                        <CbteFch>20210228</CbteFch>
+                        <Resultado>A</Resultado>
+                        <Observaciones>
+                            <Obs>
+                                <Code>1445</Code>
+                                <Msg>Campo CbteFch Debe estar comprendido  en el  rango  N-5 y N+5 siendo N = CbteFchHsGen (fecha de contingencia) para 1 - Productos</Msg>
+                            </Obs>
+                            <Obs>
+                                <Code>1431</Code>
+                                <Msg>Debe estar dado de alta en el Impuesto al momento de la fecha de emision del comprobante.</Msg>
+                            </Obs>
+                        </Observaciones>
+                        <CAEA>31086749381881</CAEA>
+                    </FECAEADetResponse>
+                </FeDetResp>
+            </FECAEARegInformativoResult>
+        </FECAEARegInformativoResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FECAEARegInformativo but always observed (this observation appeared in every test I made
+with the homologation server)
+================================================================================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-23T14:52:37.8574455-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAEARegInformativoResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEARegInformativoResult>
+                <FeCabResp>
+                    <Cuit>20381510116</Cuit>
+                    <PtoVta>9901</PtoVta>
+                    <CbteTipo>1</CbteTipo>
+                    <FchProceso>20210223145237</FchProceso>
+                    <CantReg>1</CantReg>
+                    <Resultado>A</Resultado>
+                    <Reproceso>N</Reproceso>
+                </FeCabResp>
+                <FeDetResp>
+                    <FECAEADetResponse>
+                        <Concepto>1</Concepto>
+                        <DocTipo>80</DocTipo>
+                        <DocNro>30584620389</DocNro>
+                        <CbteDesde>1</CbteDesde>
+                        <CbteHasta>1</CbteHasta>
+                        <CbteFch>20210223</CbteFch>
+                        <Resultado>A</Resultado>
+                        <Observaciones>
+                            <Obs>
+                                <Code>1431</Code>
+                                <Msg>Debe estar dado de alta en el Impuesto al momento de la fecha de emision del comprobante.</Msg>
+                            </Obs>
+                        </Observaciones>
+                        <CAEA>31086749381881</CAEA>
+                    </FECAEADetResponse>
+                </FeDetResp>
+            </FECAEARegInformativoResult>
+        </FECAEARegInformativoResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FECAEASinMovimientoInformar
+===================================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-03-19T13:08:33.4083878-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FECAEASinMovimientoInformarResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FECAEASinMovimientoInformarResult>
+                <CAEA>31116823429450</CAEA>
+                <FchProceso>20210319</FchProceso>
+                <PtoVta>9902</PtoVta>
+                <Resultado>A</Resultado>
+            </FECAEASinMovimientoInformarResult>
+        </FECAEASinMovimientoInformarResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FEParamGetTiposCbte
+===========================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-11-30T12:47:00.2136608-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FEParamGetTiposCbteResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FEParamGetTiposCbteResult>
+                <ResultGet>
+                    <CbteTipo>
+                        <Id>1</Id>
+                        <Desc>Factura A</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>2</Id>
+                        <Desc>Nota de Débito A</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>3</Id>
+                        <Desc>Nota de Crédito A</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>6</Id>
+                        <Desc>Factura B</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>7</Id>
+                        <Desc>Nota de Débito B</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>8</Id>
+                        <Desc>Nota de Crédito B</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>4</Id>
+                        <Desc>Recibos A</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>5</Id>
+                        <Desc>Notas de Venta al contado A</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>9</Id>
+                        <Desc>Recibos B</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>10</Id>
+                        <Desc>Notas de Venta al contado B</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>63</Id>
+                        <Desc>Liquidacion A</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>64</Id>
+                        <Desc>Liquidacion B</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>34</Id>
+                        <Desc>Cbtes. A del Anexo I, Apartado A,inc.f),R.G.Nro. 1415</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>35</Id>
+                        <Desc>Cbtes. B del Anexo I,Apartado A,inc. f),R.G. Nro. 1415</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>39</Id>
+                        <Desc>Otros comprobantes A que cumplan con R.G.Nro. 1415</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>40</Id>
+                        <Desc>Otros comprobantes B que cumplan con R.G.Nro. 1415</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>60</Id>
+                        <Desc>Cta de Vta y Liquido prod. A</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>61</Id>
+                        <Desc>Cta de Vta y Liquido prod. B</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>11</Id>
+                        <Desc>Factura C</Desc>
+                        <FchDesde>20110330</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>12</Id>
+                        <Desc>Nota de Débito C</Desc>
+                        <FchDesde>20110330</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>13</Id>
+                        <Desc>Nota de Crédito C</Desc>
+                        <FchDesde>20110330</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>15</Id>
+                        <Desc>Recibo C</Desc>
+                        <FchDesde>20110330</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>49</Id>
+                        <Desc>Comprobante de Compra de Bienes Usados a Consumidor Final</Desc>
+                        <FchDesde>20130401</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>51</Id>
+                        <Desc>Factura M</Desc>
+                        <FchDesde>20150522</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>52</Id>
+                        <Desc>Nota de Débito M</Desc>
+                        <FchDesde>20150522</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>53</Id>
+                        <Desc>Nota de Crédito M</Desc>
+                        <FchDesde>20150522</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>54</Id>
+                        <Desc>Recibo M</Desc>
+                        <FchDesde>20150522</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>201</Id>
+                        <Desc>Factura de Crédito electrónica MiPyMEs (FCE) A</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>202</Id>
+                        <Desc>Nota de Débito electrónica MiPyMEs (FCE) A</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>203</Id>
+                        <Desc>Nota de Crédito electrónica MiPyMEs (FCE) A</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>206</Id>
+                        <Desc>Factura de Crédito electrónica MiPyMEs (FCE) B</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>207</Id>
+                        <Desc>Nota de Débito electrónica MiPyMEs (FCE) B</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>208</Id>
+                        <Desc>Nota de Crédito electrónica MiPyMEs (FCE) B</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>211</Id>
+                        <Desc>Factura de Crédito electrónica MiPyMEs (FCE) C</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>212</Id>
+                        <Desc>Nota de Débito electrónica MiPyMEs (FCE) C</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                    <CbteTipo>
+                        <Id>213</Id>
+                        <Desc>Nota de Crédito electrónica MiPyMEs (FCE) C</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </CbteTipo>
+                </ResultGet>
+            </FEParamGetTiposCbteResult>
+        </FEParamGetTiposCbteResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FEParamGetTiposTributos
+===============================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-01-22T10:44:58.0704681-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FEParamGetTiposTributosResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FEParamGetTiposTributosResult>
+                <ResultGet>
+                    <TributoTipo>
+                        <Id>1</Id>
+                        <Desc>Impuestos nacionales</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>2</Id>
+                        <Desc>Impuestos provinciales</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>3</Id>
+                        <Desc>Impuestos municipales</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>4</Id>
+                        <Desc>Impuestos Internos</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>99</Id>
+                        <Desc>Otro</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>5</Id>
+                        <Desc>IIBB</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>6</Id>
+                        <Desc>Percepción de IVA</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>7</Id>
+                        <Desc>Percepción de IIBB</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>8</Id>
+                        <Desc>Percepciones por Impuestos Municipales</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>9</Id>
+                        <Desc>Otras Percepciones</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                    <TributoTipo>
+                        <Id>13</Id>
+                        <Desc>Percepción de IVA a no Categorizado</Desc>
+                        <FchDesde>20170719</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </TributoTipo>
+                </ResultGet>
+            </FEParamGetTiposTributosResult>
+        </FEParamGetTiposTributosResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FEParamGetTiposOpcional
+===============================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2020-12-30T16:17:19.4592698-03:00</fecha>
+            <id>4.0.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FEParamGetTiposOpcionalResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FEParamGetTiposOpcionalResult>
+                <ResultGet>
+                    <OpcionalTipo>
+                        <Id>2</Id>
+                        <Desc>RG Empresas Promovidas - Indentificador de proyecto vinculado a Régimen de Promoción Industrial</Desc>
+                        <FchDesde>20100917</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>91</Id>
+                        <Desc>RG Bienes Usados 3411 - Nombre y Apellido o Denominación del vendedor del bien usado.</Desc>
+                        <FchDesde>20130401</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>92</Id>
+                        <Desc>RG Bienes Usados 3411 - Nacionalidad del vendedor del bien usado.</Desc>
+                        <FchDesde>20130401</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>93</Id>
+                        <Desc>RG Bienes Usados 3411 - Domicilio del vendedor del bien usado.</Desc>
+                        <FchDesde>20130401</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>5</Id>
+                        <Desc>Excepcion computo IVA Credito Fiscal</Desc>
+                        <FchDesde>20141016</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>61</Id>
+                        <Desc>RG 3668 Impuesto al Valor Agregado - Art.12 IVA Firmante Doc Tipo</Desc>
+                        <FchDesde>20141016</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>62</Id>
+                        <Desc>RG 3668 Impuesto al Valor Agregado - Art.12 IVA Firmante Doc Nro</Desc>
+                        <FchDesde>20141016</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>7</Id>
+                        <Desc>RG 3668 Impuesto al Valor Agregado - Art.12 IVA Carácter del Firmante</Desc>
+                        <FchDesde>20141016</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>10</Id>
+                        <Desc>RG 3.368 Establecimientos de educación pública de gestión privada - Actividad Comprendida</Desc>
+                        <FchDesde>20150605</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>1011</Id>
+                        <Desc>RG 3.368 Establecimientos de educación pública de gestión privada - Tipo de Documento</Desc>
+                        <FchDesde>20150605</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>1012</Id>
+                        <Desc>RG 3.368 Establecimientos de educación pública de gestión privada - Número de Documento</Desc>
+                        <FchDesde>20150605</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>11</Id>
+                        <Desc>RG 2.820 Operaciones económicas vinculadas con bienes inmuebles - Actividad Comprendida</Desc>
+                        <FchDesde>20150605</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>12</Id>
+                        <Desc>RG 3.687 Locación temporaria de inmuebles con fines turísticos - Actividad Comprendida</Desc>
+                        <FchDesde>20150605</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>13</Id>
+                        <Desc>RG 2.863 Representantes de Modelos</Desc>
+                        <FchDesde>20160101</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>14</Id>
+                        <Desc>RG 2.863 Agencias de publicidad</Desc>
+                        <FchDesde>20160101</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>15</Id>
+                        <Desc>RG 2.863 Personas físicas que desarrollen actividad de modelaje</Desc>
+                        <FchDesde>20160101</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>17</Id>
+                        <Desc>RG 4004-E Locación de inmuebles destino 'casa-habitación'. Dato 2 (dos) = facturación directa / Dato 1 (uno) = facturación a través de intermediario</Desc>
+                        <FchDesde>20170309</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>1801</Id>
+                        <Desc>RG 4004-E Locación de inmuebles destino 'casa-habitación'. Clave Única de Identificación Tributaria (CUIT).</Desc>
+                        <FchDesde>20170309</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>1802</Id>
+                        <Desc>RG 4004-E Locación de inmuebles destino 'casa-habitación'. Apellido y nombres, denominación y/o razón social.</Desc>
+                        <FchDesde>20170309</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>2101</Id>
+                        <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - CBU del Emisor</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>2102</Id>
+                        <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - Alias del Emisor</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>22</Id>
+                        <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - Anulación</Desc>
+                        <FchDesde>20181226</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                    <OpcionalTipo>
+                        <Id>23</Id>
+                        <Desc>Factura de Crédito Electrónica MiPyMEs (FCE) - Referencia Comercial</Desc>
+                        <FchDesde>20190308</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </OpcionalTipo>
+                </ResultGet>
+            </FEParamGetTiposOpcionalResult>
+        </FEParamGetTiposOpcionalResponse>
+    </soap:Body>
+</soap:Envelope>
+
+
+Success FEParamGetTiposIva
+==========================
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Header>
+        <FEHeaderInfo
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <ambiente>HomologacionExterno - efa</ambiente>
+            <fecha>2021-02-09T15:40:34.4476355-03:00</fecha>
+            <id>4.1.0.0</id>
+        </FEHeaderInfo>
+    </soap:Header>
+    <soap:Body>
+        <FEParamGetTiposIvaResponse
+            xmlns="http://ar.gov.afip.dif.FEV1/">
+            <FEParamGetTiposIvaResult>
+                <ResultGet>
+                    <IvaTipo>
+                        <Id>3</Id>
+                        <Desc>0%</Desc>
+                        <FchDesde>20090220</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </IvaTipo>
+                    <IvaTipo>
+                        <Id>4</Id>
+                        <Desc>10.5%</Desc>
+                        <FchDesde>20090220</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </IvaTipo>
+                    <IvaTipo>
+                        <Id>5</Id>
+                        <Desc>21%</Desc>
+                        <FchDesde>20090220</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </IvaTipo>
+                    <IvaTipo>
+                        <Id>6</Id>
+                        <Desc>27%</Desc>
+                        <FchDesde>20090220</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </IvaTipo>
+                    <IvaTipo>
+                        <Id>8</Id>
+                        <Desc>5%</Desc>
+                        <FchDesde>20141020</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </IvaTipo>
+                    <IvaTipo>
+                        <Id>9</Id>
+                        <Desc>2.5%</Desc>
+                        <FchDesde>20141020</FchDesde>
+                        <FchHasta>NULL</FchHasta>
+                    </IvaTipo>
+                </ResultGet>
+            </FEParamGetTiposIvaResult>
+        </FEParamGetTiposIvaResponse>
+    </soap:Body>
+</soap:Envelope>

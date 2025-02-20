@@ -1,8 +1,8 @@
 from AfipClient import *
 	
-# afipClient = AfipClient('afip')
-# afipClient.fEDummy()
-# afipClient.fECompUltimoAutorizado()
+afipClient = AfipClient('afip')
+afipClient.fEDummy()
+afipClient.fECompUltimoAutorizado()
 # afipClient.fECAESolicitar()
 # afipClient.fECAEASolicitar()
 # afipClient.fECompConsultar()
@@ -10,8 +10,8 @@ from AfipClient import *
 # afipClient.fECAEASinMovimientoInformar()
 # afipClient.fECAEASinMovimientoConsultar()
 
-bsduAfipClient = AfipClient('bsdu')
-bsduAfipClient.fEDummy()
+# bsduAfipClient = AfipClient('bsdu')
+# bsduAfipClient.fEDummy()
 # bsduAfipClient.fECompUltimoAutorizado()
 # bsduAfipClient.fECAESolicitar()
 # bsduAfipClient.fECAEASolicitar()

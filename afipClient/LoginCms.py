@@ -59,7 +59,7 @@ class LoginCms:
 	
 		self.logger.info('Generating MiLoginTicketRequest.xml.cms')
 		
-		dir = "/mnt/sdc/apu/scripts/afipClient/curl/"
+		dir = "c:/dev/soapSample/afipClient/curl/"
 		cmd = f"openssl cms -sign -in {dir}MiLoginTicketRequest.xml -out {dir}MiLoginTicketRequest.xml.cms -signer {dir}MiCertificado.pem -inkey {dir}MiClavePrivada.key -nodetach -outform PEM"
 		# print(cmd)
 		decrypted = call(cmd, shell=True)
@@ -67,7 +67,7 @@ class LoginCms:
 	# extractParam
 	def extractParam(self):
 	
-		dir = "/mnt/sdc/apu/scripts/afipClient/curl/"
+		dir = "c:/dev/soapSample/afipClient/curl/"
 		file = f"{dir}MiLoginTicketRequest.xml.cms"
 		
 		f = open(file)
@@ -81,7 +81,7 @@ class LoginCms:
 	# readTA
 	def readTA(self):
 	
-		dir = "/mnt/sdc/apu/scripts/afipClient/"
+		dir = "c:/dev/soapSample/afipClient/"
 		file = f"{dir}TA.xml"		
 		doc = etree.parse(file)
 		

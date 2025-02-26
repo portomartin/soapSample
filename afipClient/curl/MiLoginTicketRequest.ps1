@@ -1,0 +1,1 @@
+openssl cms -sign -in MiLoginTicketRequest.xml -out MiLoginTicketRequest.xml.cms -signer MiCertificado.pem -inkey MiClavePrivada.key -nodetach -outform PEM 

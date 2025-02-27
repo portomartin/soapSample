@@ -20,9 +20,6 @@ afipClient.fECompUltimoAutorizado()
 # bsduAfipClient.fECAEASinMovimientoInformar()
 # bsduAfipClient.fECAEASinMovimientoConsultar()
 
-
-
-
 # afipClient.fECAEASolicitar()
 # afipClient.fECompConsultar()
 # afipClient.fECAEAConsultar()

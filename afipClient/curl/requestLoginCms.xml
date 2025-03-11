@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:wsaa="http://wsaa.view.sua.dvadac.desein.afip.gov">
+<soapenv:Header/>
+<soapenv:Body>
+<wsaa:loginCms>
+<wsaa:in0>
+MIIG2AYJKoZIhvcNAQcCoIIGyTCC
+pGLmfu+PvB5M7JqWE83FFQiNedXiEFuHt8wEtmE0nxRqqiU3ggDtSj7aF4Wnopu0
+MXlR5b1VTkRv3dNsovS1+rEcAo1mMh9SO2IoSl2eNeg/hHzsovRhSxhItTqjBp11
+fKXbVv4M16YW9biJH15bh9cBZMWAsDVQlRlF9CA1s8rTrbxQCh6F60Era9Z0EvjI
+ImhCkSwznb0yRVXjf9oFLZVwSgG+P2Y3Jk7nc7ZlWKInvZleE/jZgteZDcixY9Bh
+OJoyp6HQkA8ps8iwYE1lQry1lVYfu/Xl6S10qQ==
+</wsaa:in0>
+</wsaa:loginCms>
+</soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,1 @@
+openssl pkcs12 -export -inkey MiClavePrivada.key -in MiCertificado.pem -out MiCertificado.pfx 

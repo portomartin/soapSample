@@ -1,0 +1,574 @@
+{
+	"store_id": 9,
+	"store_name": "Boutique",
+	"store_type": "Boutique",
+	"store_avatar": "images/logo/logo.png",
+
+	"categories": [{
+			"name": "Polos",
+			"items": [{
+					"image": "r1.png",
+					"name": "Polo bolsillo",
+					"description": "Polo con bolsillo pique BASIC POLO POCKET, de cuello clásico. Fabricado en tejido de algodón 100% ring spun. Bolsillo frontal, tres botones a tono, aberturas laterales y tapeta reforzada. Tejido pre-encogido y con tratamiento enzimático",
+					"subDescription": "Polo bolsillo",
+					"price": 14,
+					"sku": "1000000000016",
+					"colors": [
+						"azul",
+						"celeste",
+						"gris",
+						"oliva"
+					],
+					"background": [
+						"#7498c4",
+						"#a6daf3",
+						"#d5d5d3",
+						"#70b5b7"
+					],					
+					"sizes": [
+						"S",
+						"M",
+						"L"
+					]
+				}, {
+					"image": "r2.png",
+					"name": "Polo basic",
+					"description": "Polo pique BASIC POLO, de cuello clásico. Fabricado en algodón tejido pique de tacto suave. Tapeta de tres botones iguala a tono de la prenda. Manga montada con bocamanga reforzados. Bajos rectos con aberturas laterales.",
+					"subDescription": "Polo bolsillo",
+					"price": 15,
+					"sku": "1000000000023",
+					"colors": [
+						"amarillo",
+						"azul"
+					],
+					"background": [
+						"#ebe89c",
+						"#7498c4"						
+					],
+					"sizes": [
+						"S",
+						"M",
+						"L"
+					]
+				}, {
+					"image": "r3.png",
+					"name": "Polo plana",
+					"description": "",
+					"subDescription": "Polo bolsillo",
+					"price": 12,
+					"sku": "1000000000030",
+					"colors": [
+						"blanco",
+						"azul",
+						"rojo"
+					],
+					"background": [
+						"#f5f2f1",
+						"#7498c4",
+						"#d94f66"
+					],
+					"sizes": [
+						"S",
+						"M",
+						"L",
+						"XL"
+					]
+				}, {
+					"image": "r4.png",
+					"name": "Polo Blau",
+					"description": "Polo con bolsillo pique BASIC POLO POCKET, de cuello clásico. Fabricado en tejido de algodón 100% ring spun. Bolsillo frontal, tres botones a tono, aberturas laterales y tapeta reforzada. Tejido pre-encogido y con tratamiento enzimático",
+					"subDescription": "Polo bolsillo",
+					"price": 13,
+					"sku": "1000000000047",
+					"colors": [
+						"navy",
+						"rojo",
+						"blanco"
+					],
+					"background": [
+						"#172852",
+						"#d94f66",
+						"#f5f2f1"						
+					],					
+					"sizes": [
+						"S",
+						"M",
+						"L",
+						"XL"
+					]
+				}, {
+					"image": "r5.png",
+					"name": "Polo Dress",
+					"description": "",
+					"subDescription": "Polo bolsillo",
+					"price": 15,
+					"sku": "1000000000054",
+					"colors": [
+						"amarillo",
+						"azul"
+					],
+					"background": [
+						"#172852",
+						"#7498c4"
+					],
+					"sizes": [
+						"S",
+						"M",
+						"L"
+					]
+				}, {
+					"image": "r6.png",
+					"name": "Polo Nova",
+					"description": "Chaqueta polar NOVA MEN, de alta densidad antipilling. Fabricado en lana polar de alta densidad con tratamiento antipilling. Apertura frontal con cremallera en algunos casos contrastada. Cuenta con dos bolsillos con cierre de cremallera y malla en el forro. Disponen de acabados en puños y sisas con punto (No hay sugerencias) Y corte princesas-line. Corte moderno gracias a su talle bajo. Disponible en tallas grandes",
+					"subDescription": "Polo bolsillo",
+					"price": 13,
+					"sku": "1000000000061",
+					"colors": [
+						"blanco",
+						"azul",
+						"rojo"
+					],
+					"background": [
+						"#f5f2f1",
+						"#7498c4",
+						"#d94f66"						
+					],
+					"sizes": [
+						"S",
+						"M",
+						"L",
+						"XL"
+					]
+				}, {
+					"image": "r7.png",
+					"name": "Polo Men",
+					"description": "Polo pique PERFECT MEN, de cuello clásico y color liso. Fabricado en tejido de punto pique. Cuello con tapacosturas reforzado, acanalado. Tapeta abotonada con tres botones perlados igualados a tono + 1 de repuesto. Bajo recto sin aperturas laterales. Mangas acabada con puños en canalé 1x1. Disponible en tallas grandes.",
+					"subDescription": "Polo bolsillo",
+					"price": 13,
+					"sku": "1000000000078",
+					"colors": [
+						"navy",
+						"rojo",
+						"blanco"
+					],
+					"background": [
+						"#172852",
+						"#d94f66",
+						"#f5f2f1"						
+					],					
+					"sizes": [
+						"S",
+						"M",
+						"L",
+						"XL"
+					]
+				}
+			]
+		}, {
+			"name": "Pantalones",
+			"items": [{
+					"image": "p1.png",
+					"name": "Pantalon gabardina",
+					"description": "Pantalón chino JARED MEN, de cintura con trabillas. Bolsillos delanteros italianos. Corte ceñido. 2 bolsillos traseros ribeteados. Bolsillo pequeño. Trabillas para cinturón.",
+					"subDescription": "Polo bolsillo",
+					"price": 35,
+					"sku": "1000000000108",
+					"colors": [
+						"beige", "gris", "marron", "navy"
+					],
+					"background": [
+						"#e4cfb5",
+						"#d5d5d3",
+						"#9f918e",
+						"#172852"
+					],
+					"sizes": [
+						"40",
+						"42",
+						"44"
+					]
+				}, {
+					"image": "p2.png",
+					"name": "Pantalon 5P Cool",
+					"description": "Pantalón chino strech CLASSIC/HALF SEASON, con trabillas en la cintura. Cierre con cremallera y botón. Bolsillos franceses. Un bolsillo pequeño con cremallera. Dos bolsillos de ojal en la parte trasera con botón. Trabillas en la cintura y parche en piel. En algodón de dos capas de alta densidad peinado. Lavado con enzimas.",
+					"subDescription": "Polo bolsillo",
+					"price": 23,
+					"sku": "1000000000115",
+					"colors": [
+						"azul", "camel", "gris"
+					],
+					"background": [
+						"#7498c4",
+						"#e4cfb5",
+						"#d5d5d3"
+					],					
+					"sizes": [
+						"42",
+						"44",
+						"46"
+					]
+				}, {
+					"image": "p3.png",
+					"name": "Pantalon sport",
+					"description": "Pantalón chino PERFROMANCE, de cintura con trabillas. Tejido funcional suave y muy agradable al tacto. Material de buena transpirabilidad. 2 bolsillos en el frente. 2 bolsillo detrás. Trabillas en la cintura. Cremallera y botón de cierre. Tejido elástico.",
+					"subDescription": "Polo bolsillo",
+					"price": 32,
+					"sku": "1000000000122",
+					"colors": [
+						"beige", "bordo"
+					],
+					"background": [
+						"#e4cfb5",
+						"#b3374b"
+					],								
+					"sizes": [
+						"42",
+						"44",
+						"46"
+					]
+				}, {
+					"image": "p4.png",
+					"name": "Pantalon harbour",
+					"description": "Pantalón chino HARVEST OFFICER TROUSER, de corte moderno ajustado. Fabricado en material agradable y suave para una comodidad óptima y libertad de movimiento. La combinación de algodón y elastano asegura que los pantalones vuelvan a su ajuste original después del lavado. La tela se trata con un tratamiento enzimático que contrae el material y lo vuelve suave y repelente al polvo. Bolsillos traseros con costuras contrastadas. Cremallera YKK",
+					"subDescription": "Polo bolsillo",
+					"price": 35,
+					"sku": "1000000000139",
+					"colors": [
+						"gris", "negro"
+					],
+					"background": [
+						"silver","#353432"
+					],								
+					"sizes": [
+						"40",
+						"42",
+						"44"
+					]
+				}, {
+					"image": "p5.png",
+					"name": "Pantalon Gray",
+					"description": "Pantalón chino PASARELA II, con cintura con trabillas. Tejido funcional cómodo y agradable al tacto. Material de gran transpirabilidad. Cintura con presillas para cinturón. Bolsillos laterales sin cremallera. Corte pensado para mejorar la libertad de movimientos. Corte ajustado.",
+					"subDescription": "Polo bolsillo",
+					"price": 23,
+					"sku": "1000000000146",
+					"colors": [
+						"azul", "camel", "gris"
+					],
+					"background": [
+						"#7498c4",
+						"#e4cfb5",
+						"#d5d5d3"						
+					],
+					"sizes": [
+						"40",
+						"42",
+						"44"
+					]
+				}, {
+					"image": "p6.png",
+					"name": "Pantalon Wine",
+					"description": "Pantalón cargo CARGO POCKET, con cintura con trabillas. Fabricado en tejido de sarga de alta calidad. Pierna recta. Dos bolsillos con corte inclinado. Dos bolsillos laterales en pierna con tapeta y cierre de clic. Dos bolsillos traseros con cierre de botón.",
+					"subDescription": "Polo bolsillo",
+					"price": 23,
+					"sku": "1000000000153",
+					"colors": [
+						"beige", "bordo"
+					],
+					"background": [
+						"#e4cfb5",
+						"#b3374b"						
+					],					
+					"sizes": [
+						"42",
+						"44",
+						"46",
+						"48"
+					]
+				}, {
+					"image": "p7.png",
+					"name": "Pantalon glamour",
+					"description": "Pantalón chino RITZ, con pinzas. Tejido funcional agradable y resistente. Material de buena transpirabilidad. Dos bolsillos delanteros. Sobre el derecho, además, un bolsillo monedero. Dos bolsillos traseros con dibujo. Trabillas para el cinturón. Detalle de canesú, emulando a los pantalones vaqueros. Etiqueta removible.",
+					"subDescription": "Polo bolsillo",
+					"price": 25,
+					"sku": "1000000000160",
+					"colors": [
+						"gris", "negro"
+					],
+					"background": [
+						"#d5d5d3",
+						"#353432"						
+					],								
+					"sizes": [
+						"42",
+						"44",
+						"46",
+						"48"
+					]
+				}
+			]
+		}, {
+			"name": "Abrigos",
+			"items": [{
+					"image": "c1.png",
+					"name": "Abrigo bomber",
+					"description": "Chaqueta de montaña acolchada con capucha AFP-1 GRAVITY, con cuello alto chimenea. Tejido funcional resistente a viento y agua con gran durabilidad. Material agradable de buena transpirabilidad. Capucha y protector de barbilla. Acolchado. Tacto muy suave. Cremallera en color de contraste, solapa interior cortaviento. Bolsillo interior. Bajo ajustable, puños elásticos. Impermeable (600 mm). Transpirable (1.000 gr/m² en 24H).",
+					"subDescription": "Polo bolsillo",
+					"price": 15,
+					"sku": "1000000000214",
+					"colors": [
+						"azul", "gris", "marron"
+					],
+					"background": [
+						"#7498c4",
+						"#d5d5d3",						
+						"#9f918e"						
+					],								
+					"sizes": [
+						"S",
+						"M",
+						"L",
+						"XL"
+					]
+				}, {
+					"image": "c2.png",
+					"name": "Abrigo Denim Pro",
+					"description": "Cazadora acolchada ST5270 ACTIVE, de cuello tipo chimenea. Aislamiento térmico excelente con bajo peso. Resistente al agua y al viento. Cuello alto. Cremallera con tirador metálico (Sin níquel). 2 bolsillos laterales con cremallera. Colgador. Cremallera en forro para fácil acceso de decoración. Limpieza en seco. Costuras laterales.",
+					"subDescription": "Polo bolsillo",
+					"price": 75,
+					"sku": "1000000000221",
+					"colors": [
+						"oliva", "negro"
+					],
+					"background": [
+						"#70b5b7",
+						"#353432"						
+					],								
+					"sizes": [
+						"S",
+						"M",
+						"L",
+						"XL"
+					]
+				}, {
+					"image": "c3.png",
+					"name": "Abrigo Cyber Cool",
+					"description": "Cazadora con capucha PACIFIC R. 2.0, con cuello chimenea. Cremallera de 8 mm de color contrastante. Capucha contorneada con doble costura y cordón. Puños con elástico y cauchutados de ajuste. Dos bolsillos exteriores con cremallera cubierta. Interior no acolchado y reforzado. Un bolsillo para Smartphone con cremallera y paso para auriculares. Cremallera en el pecho y en la espalda para facilitar la impresión y el bordado.",
+					"subDescription": "Polo bolsillo",
+					"price": 70,
+					"sku": "1000000000238",
+					"colors": [
+						"verde"
+					],
+					"background": [
+						"#70b5b7"
+					],
+					"sizes": [
+						"S",
+						"M",
+						"L",
+						"XL"
+					]
+				}, {
+					"image": "c4.png",
+					"name": "Abrigo Karl 02",
+					"description": "Abrigo largo HYBRID WOOL COAT, de cuello alto chimenea. Tejido muy confortable y suave al tacto de color negro. Cierres de cremallera en ambos sentidos YKK. Cierre de cremallera a prueba de agua. Cierre magnético en el cuello. Detalles de alta visibilidad para mayor seguridad.",
+					"subDescription": "Polo bolsillo",
+					"price": 100,
+					"sku": "1000000000245",
+					"colors": [
+						"blanco", "azul"
+					],
+					"background": [
+						"#f5f2f1",
+						"#7498c4"
+					],					
+					"sizes": [
+						"S",
+						"M",
+						"L",
+						"XL"
+					]
+				}, {
+					"image": "c5.png",
+					"name": "Abrigo Anto Kol",
+					"description": "Chaqueta de invierno TB0A29J5, con cuello chimenea. Tejido funcional resistente al agua y viento agradable al tacto. Material de buena transpirabilidad y retención del calor corporal. Capucha plegada en cuello contrastada en color kaki. Ajustable en la cintura con cordón elástico. Cierre cremallera contrastada en color kaki con pespunte azul. Solapas con botones a presión. Dos bolsillos interiores. Uno para teléfono (Con ojal pasacables) Y el otro de malla camo. Dos bolsillos laterales. Uno de ellos con solapa con botón a presión. Dos bolsillos en el pecho con cierre con botón a presión. Puños ajustables con botón a presión. Distintivo de cuero con el logo del árbol de timberland cosido en la manga. Se puede llevar con la chaqueta híbrida mount cabot.",
+					"subDescription": "Polo bolsillo",
+					"price": 33,
+					"sku": "1000000000252",
+					"colors": [
+						"gris", "verde"
+					],
+					"background": [
+						"#d5d5d3",
+						"#70b5b7"
+					],
+					"sizes": [
+						"S",
+						"M",
+						"L",
+						"XL"
+					]
+				}
+			]
+		}, {
+			"name": "Zapatos",
+			"items": [{
+					"image": "z1.png",
+					"name": "Zapatillas Wak",
+					"description": "Zapatilla killington TB0A2A, de estilo actual. Fabricado con tejido Rebotl. Un material reciclado que se obtiene de botellas de plástico. Cordones 100% pete reciclado. Plantilla ortholite®. Plantilla de Eva para la absorción de impactos. Tecnología sensorflex que aporta sujeción. Suspensión y suavidad. Suela de goma.",
+					"subDescription": "Polo bolsillo",
+					"price": 150,
+					"sku": "1000000000313",
+					"colors": [
+						"marron", "verde"
+					],
+					"background": [
+						"#9f918e",
+						"#70b5b7"
+					],					
+					"sizes": [
+						"39",
+						"40",
+						"41",
+						"42"
+					]
+				}, {
+					"image": "z2.png",
+					"name": "Zapatos Willikies",
+					"description": "",
+					"subDescription": "Polo bolsillo",
+					"price": 65,
+					"sku": "1000000000320",
+					"colors": [
+						"negro"
+					],
+					"background": [
+						"#353432"
+					],										
+					"sizes": [
+						"38",
+						"39",
+						"40",
+						"41"
+					]
+				}, {
+					"image": "z3.png",
+					"name": "Zapatos Robson",
+					"description": "Zapato de caballero de la marca Carl Robson tipo blucher.",
+					"subDescription": "Polo bolsillo",
+					"price": 43,
+					"sku": "1000000000337",
+					"colors": [
+						"rojo","negro"
+					],
+					"background": [
+						"#d94f66","#353432"
+					],															
+					"sizes": [
+						"40",
+						"41",
+						"42",
+						"43"
+					]
+				}, {
+					"image": "z4.png",
+					"name": "Zapatilla HELMET28",
+					"description": "Zapatillas deportivas CR204967 LITERIDE PACER. Fabricadas con un acolchado extraordinario. Plantillas de resina literide de nueva generación. Superflexibles. Increíblemente ligeras y extraordinariamente resistentes. Empeine de matlite adaptable y flexible para hacerlas agradables de llevar desde el primer día. Suela de resina croslite que ofrece sujeción y comodidad durante todo el día.",
+					"subDescription": "Polo bolsillo",
+					"price": 60,
+					"sku": "1000000000344",
+					"colors": [
+						"azul"
+					],
+					"background": [
+						"#7498c4"
+					],																				
+					"sizes": [
+						"42",
+						"43",
+						"44",
+						"45"
+					]
+				}, {
+					"image": "z5.png",
+					"name": "Zapatilla NERRAWIA97",
+					"description": "SGF6. Imprimibles. Suela: Exterior: Goma, interior: Etileno acetato de vinilo (EVA). Zapatilla clásica de algodón de caña alta diseñada para la personalización: DTG, transfer y bordado. Suela blanca con una línea negra. Se entrega con cordones blancos. Cada par de zapatillas es entregado con una bolsa y etiqueta. También disponible en tallas Junior (904.53) Y Unisex (905.53). Cordones de colores disponibles por separado (907.53)",
+					"subDescription": "Polo bolsillo",
+					"price": 65,
+					"sku": "1000000000351",
+					"colors": [
+						"negro"
+					],
+					"background": [
+						"#353432"
+					],
+					"sizes": [
+						"40",
+						"41",
+						"42",
+						"43"
+					]
+				}, {
+					"image": "z6.png",
+					"name": "Zapatos Buzio Classic",
+					"description": "Bota sprint TBA17JR. Cuero de grano completo de alta calidad procedente de una curtiduría ecológica clasificada como plata por el log. Cuello acolchado. Cordones estilizados/lace-up style. Plantilla de Eva para la absorción de impactos. Suela de caucho.",
+					"subDescription": "Polo bolsillo",
+					"price": 48,
+					"sku": "1000000000368",
+					"colors": [
+						"azul"
+					],
+					"background": [
+						"#7498c4"
+					],					
+					"sizes": [
+						"38",
+						"39",
+						"40",
+						"41"
+					]
+				}, {
+					"image": "z7.png",
+					"name": "Botas Lady Rucs02",
+					"description": "Bota bradstreet TBA146Q. Cuero de grano completo y nobuk premium procedente de una curtiduría clasificada plata por el leather working group. Cuello acolchado. Suela y forro de pete 100% reciclado ultrasuave. Suela ortholite® de pu a partir de 5% de caucho reciclado. La tecnología sensorflex aporta sujeción debajo del pie. Una suspensión independiente y una mayor flexibilidad. |Pequeñas muescas de goma (42% de caucho reciclado). |Con un sistema de triple suspensión que amortigua cada paso. Sensorflex es la tecnología que se adapta inmediatamente a todo tipo de suelo para pasos estables y cómodos.",
+					"subDescription": "Polo bolsillo",
+					"price": 50,
+					"sku": "1000000000375",
+					"colors": [
+						"cafe"
+					],
+					"background": [
+						"#e4cfb5"
+					],										
+					"sizes": [
+						"39",
+						"40",
+						"41",
+						"42"
+					]
+				}, {
+					"image": "z8.png",
+					"name": "Zapatos Atticus",
+					"description": "Nauticos CR206338 CLASSIC BOAT. Calzado ligero de estilo marino en crosslite moldeado. Sistema de cordones elegante. Las aberturas laterales de ventilación favorecen la circulación del aire y ayudan a evacuar la humedad. Suelas de resina croslite impermeable para una sujeción y una comodidad que dura todo el día.",
+					"subDescription": "Polo bolsillo",
+					"price": 65,
+					"sku": "1000000000382",
+					"colors": [
+						"azul", "negro"
+					],
+					"background": [
+						"#7498c4",
+						"#353432"						
+					],															
+					"sizes": [
+						"38",
+						"39",
+						"40",
+						"41"
+					]
+				}
+
+			]
+		}
+	]
+}
